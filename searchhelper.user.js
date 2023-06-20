@@ -614,4 +614,5 @@ if (isBeta) {
 
 $("body").on("click", ".ssw-helper", function () {
     sswopen($(this).attr("item"));
+    document.querySelector("#searchstr").focus();
 });
