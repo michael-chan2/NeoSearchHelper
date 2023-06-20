@@ -327,6 +327,7 @@ if (isBeta) {
 
         $("#ssw-criteria").val("exact");
         $("#searchstr").val(item);
+        $("#searchstr").focus();
     }
 } else {
     /*
@@ -609,10 +610,11 @@ if (isBeta) {
         $("#ssw-criteria").val("exact");
 
         $("#searchstr").val(item);
+
+        $("#searchstr").focus();
     }
 }
 
 $("body").on("click", ".ssw-helper", function () {
     sswopen($(this).attr("item"));
-    document.querySelector("#searchstr").focus();
 });
